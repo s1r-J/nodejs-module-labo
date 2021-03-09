@@ -1,0 +1,14 @@
+{
+  "name": "randomstring-labo",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "s1r-J",
+  "license": "MIT",
+  "dependencies": {
+    "randomstring": "^1.1.5"
+  }
+}
