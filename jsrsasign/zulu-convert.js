@@ -1,4 +1,4 @@
-import jsrsasign from 'jsrsasign';
+import jsrsasign, { zulutodate } from 'jsrsasign';
 
 const fidoallianceCert = `-----BEGIN CERTIFICATE-----
 MIIDXzCCAkegAwIBAgILBAAAAAABIVhTCKIwDQYJKoZIhvcNAQELBQAwTDEgMB4G
@@ -36,3 +36,13 @@ console.log('UNIX（ミリ秒）: ' + unixTimeMsec);
 
 const date = jsrsasign.zulutodate(notBefore);
 console.log('Date型？: ' + (date instanceof Date));
+
+// Error in version 10.5.1
+const overflowDateStr = '401231235959Z'; // 2040 Dec 31 23:59:59
+const overflowDate = new Date(Date.UTC(2000 + parseInt(overflowDateStr.slice(0, 2)), parseInt(overflowDateStr.slice(2, 4)) - 1, parseInt(overflowDateStr.slice(4, 6)), parseInt(overflowDateStr.slice(6, 8)), parseInt(overflowDateStr.slice(8, 10)), parseInt(overflowDateStr.slice(10, 12))))
+console.log(overflowDate.getTime());                 // 2240611199000
+console.log(jsrsasign.zulutomsec(overflowDateStr));  // 2240611199000
+console.log(jsrsasign.zulutosec(overflowDateStr));   // -2054356097
+
+console.log(Math.floor(jsrsasign.zulutomsec(overflowDateStr)/1000));  // 2240611199
+
