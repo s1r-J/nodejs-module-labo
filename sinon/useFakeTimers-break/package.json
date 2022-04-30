@@ -1,0 +1,13 @@
+{
+  "private": true,
+  "description": "test sinon useFakeTimers",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "s1r-J",
+  "license": "MIT",
+  "dependencies": {
+    "sinon": "^13.0.1"
+  }
+}
