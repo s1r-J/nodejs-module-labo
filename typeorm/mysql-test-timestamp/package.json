@@ -1,0 +1,26 @@
+{
+   "name": "mysql-test-timestamp",
+   "private": true,
+   "version": "0.0.1",
+   "description": "",
+   "main": "dist/index.js",
+   "scripts": {
+      "build": "tsc",
+      "start": "ts-node src/index.ts",
+      "start:sqlite": "ts-node src/sqlite.ts"
+   },
+   "author": "s1r-J",
+   "devDependencies": {
+      "@types/node": "^8.0.29",
+      "typescript": "3.3.3333",
+      "ts-node": "3.3.0"
+   },
+   "dependencies": {
+      "dayjs": "^1.11.5",
+      "mysql": "^2.14.1",
+      "mysql2": "^2.3.3",
+      "reflect-metadata": "^0.1.13",
+      "sqlite3": "^5.1.1",
+      "typeorm": "0.2.36"
+   }
+}
