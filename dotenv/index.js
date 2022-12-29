@@ -8,6 +8,10 @@ const numberEnv = process.env.NUMBER_ENV;
 console.log('NUMBER_ENV type:', typeof numberEnv); // string
 console.log('NUMBER_ENV:', numberEnv); // 123
 
+const booleanEnv = process.env.BOOLEAN_ENV;
+console.log('BOOLEAN_ENV type:', typeof booleanEnv); // string
+console.log('BOOLEAN_ENV:', booleanEnv); // true
+
 const noQuotationEnv = process.env.NO_QUOTATION_ENV;
 console.log('NO_QUOTATION_ENV:', noQuotationEnv); // no quotation env
 
