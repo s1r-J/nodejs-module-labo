@@ -26,6 +26,9 @@ console.log('MULTI_ENV:', multiEnv); // THIS IS MULTILINE
                                      // ENV VALUE
                                      // END
 
+const failMultiEnv = process.env.FAIL_MULTI_ENV;
+console.log('FAIL_MULTI_ENV:', failMultiEnv); // THIS IS FAIL MULTILINE
+
 const altMultiEnv = process.env.ALT_MULTI_ENV;
 console.log('ALT_MULTI_ENV:', altMultiEnv); // THIS IS ALT MULTILINE
                                             // ENV VALUE
