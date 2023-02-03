@@ -1,0 +1,12 @@
+{
+  "private": true,
+  "description": "test async-lock",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "s1r-J",
+  "dependencies": {
+    "async-lock": "^1.4.0"
+  }
+}
