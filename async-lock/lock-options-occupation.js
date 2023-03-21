@@ -33,7 +33,6 @@ const myFunction = async (timeout) => {
     await Promise.all([
         myFunction(900),
         myFunction(101),
-        myFunction(1),
     ]);
 
     console.log(count);
