@@ -31,8 +31,8 @@ const myFunction = async (timeout) => {
 
 (async () => {
     await Promise.all([
-        myFunction(900),
-        myFunction(101),
+        myFunction(1002), // 1001だとエラーが発生しなかった
+        myFunction(1),
     ]);
 
     console.log(count);
