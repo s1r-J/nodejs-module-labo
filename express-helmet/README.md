@@ -21,7 +21,7 @@ Helmetなし
 ```
 X-Powered-By: Express
 ETag: W/"e-34iY2aJdh23Y4/jkZycmy35iyiA"
-Date: Fri, 07 Apr 2023 16:31:58 GMT
+Date: Thr, 01 Apr 2023 12:00:00 GMT
 Connection: keep-alive
 Keep-Alive: timeout=5
 ```
@@ -43,7 +43,8 @@ X-Permitted-Cross-Domain-Policies: none
 Referrer-Policy: no-referrer
 X-XSS-Protection: 0
 ETag: W/"a-jPyRejoCXiFb4CMwF2krB/wtbcM"
-Date: Fri, 07 Apr 2023 16:31:06 GMT
+Date: Thr, 01 Apr 2023 12:00:00 GMT
 Connection: keep-alive
 Keep-Alive: timeout=5
 ```
+
