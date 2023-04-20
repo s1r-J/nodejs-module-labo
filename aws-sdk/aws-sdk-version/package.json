@@ -1,0 +1,15 @@
+{
+  "private": true,
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "zip:v2": "bash scripts/zip-v2.sh",
+    "zip:v2-not": "bash scripts/zip-v2-notincluded.sh",
+    "zip:v3": "bash scripts/zip-v3.sh",
+    "zip:v3-all": "bash scripts/zip-v3-all.sh"
+  },
+  "author": "s1r-J",
+  "dependencies": {
+    "aws-sdk": "^2.1360.0"
+  }
+}
