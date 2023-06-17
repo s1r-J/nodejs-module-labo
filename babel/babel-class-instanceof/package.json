@@ -1,0 +1,16 @@
+{
+  "private": true,
+  "description": "babel instanceof",
+  "main": "index.js",
+  "scripts": {
+    "build": "babel src/* -d dist/",
+    "test": "mocha test/*"
+  },
+  "author": "s1r-J",
+  "dependencies": {
+    "@babel/cli": "^7.22.5",
+    "@babel/core": "^7.22.5",
+    "chai": "^4.3.7",
+    "mocha": "^10.2.0"
+  }
+}

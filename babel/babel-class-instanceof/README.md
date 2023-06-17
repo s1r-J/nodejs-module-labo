@@ -1,0 +1,2 @@
+# babelの変換前後のクラスをinstanceofで比較するとfalseになる
+
