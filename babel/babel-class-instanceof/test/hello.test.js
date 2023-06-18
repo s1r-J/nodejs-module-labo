@@ -13,6 +13,6 @@ describe('Hello test', () => {
     it('User object from src/user.js is not BeforeUser', () => {
         const david = new BeforeUser('david');
         const greeting = hello(david);
-        expect(greeting).to.equal('david are not User.'); // Passing!
+        expect(greeting).to.equal('You are not User.'); // Passing!
     });
 });
