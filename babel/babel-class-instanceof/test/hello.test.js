@@ -1,17 +1,17 @@
 const { expect } = require('chai'); 
-const User = require('../src/user');
-const IndexUser = require('../index').User;
+const BeforeUser = require('../src/user');
+const AfterUser = require('../index').User;
 const hello = require('../src/hello');
 
 describe('Hello test', () => {
-    it('object from index is User', () => {
-        const kate = new IndexUser('kate');
+    it('User object from index.js(dist/user.js) is BeforeUser', () => {
+        const kate = new AfterUser('kate');
         const greeting = hello(kate);
         expect(greeting).to.equal('Hello, kate.');  // Passing!
     });
 
-    it('object from src/user is not User', () => {
-        const david = new User('david');
+    it('User object from src/user.js is not BeforeUser', () => {
+        const david = new BeforeUser('david');
         const greeting = hello(david);
         expect(greeting).to.equal('david are not User.'); // Passing!
     });

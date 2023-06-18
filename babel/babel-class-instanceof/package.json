@@ -3,6 +3,7 @@
   "description": "babel instanceof",
   "main": "index.js",
   "scripts": {
+    "postinstall": "npm run build",
     "build": "babel src/* -d dist/",
     "test": "mocha test/*"
   },
