@@ -4,6 +4,8 @@
 
 ## 出力
 
+### index.js
+
 ```
 == console.log ==
 <ref *1> {
@@ -97,4 +99,20 @@ TypeError: Converting circular structure to JSON
     at Function.Module._load (internal/modules/cjs/loader.js:769:14)
     at Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:72:12)
     at internal/main/run_main_module.js:17:47
+```
+
+### loop.js
+
+`obj -> objProxy -> obj`のように、
+別のオブジェクトを介して自分自身を参照しているオブジェクトはどのように表示されるのか、を検証した。
+
+自分自身は`[Circular *1]`に変換してくれるので循環参照で無限ループすることはない。
+
+```
+== console.log ==
+<ref *1> { objProxy: { obj: [Circular *1] } }
+====
+== util.inspect options ==
+<ref *1> { objProxy: { obj: [Circular *1] } }
+====
 ```
