@@ -1,0 +1,12 @@
+{
+  "private": true,
+  "description": "test csv-parse",
+  "main": "index.js",
+  "scripts": {},
+  "keywords": [],
+  "author": "s1r-J",
+  "dependencies": {
+    "csv-parse": "^5.5.5",
+    "iconv-lite": "^0.6.3"
+  }
+}
