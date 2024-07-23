@@ -1,0 +1,15 @@
+{
+  "private": true,
+  "description": "express redirect",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon index.js"
+  },
+  "author": "s1r-J",
+  "dependencies": {
+    "ejs": "^3.1.10",
+    "express": "^4.19.2",
+    "helmet": "^7.1.0",
+    "nodemon": "^3.1.4"
+  }
+}
