@@ -1,0 +1,19 @@
+{
+  "private": true,
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "override": "node override.js",
+    "override2": "node override2.js",
+    "cli": "MY_ENV_VALUE=CLI_VALUE node cli.js",
+    "env": "node --env-file=.env --env-file=.env.next env.js",
+    "env2": "node --env-file=.env env2.js",
+    "env3": "ALPHA=CLI_VALUE node --env-file=.env env3.js"
+  },
+  "author": "s1r-J",
+  "dependencies": {
+    "dotenv": "^16.4.5"
+  }
+}
