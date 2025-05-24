@@ -1,0 +1,16 @@
+{
+  "private": true,
+  "version": "1.0.0",
+  "main": "index.js",
+  "engines": {
+    "node": "<22"
+  },
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "s1r-J",
+  "dependencies": {
+    "evp_bytestokey": "^1.0.3"
+  }
+}
